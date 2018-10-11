@@ -30,7 +30,8 @@
                 orientation: '@',
                 update: '=',
                 ngModel: '=',
-                mobile: '@'
+                mobile: '@',
+                enableResize: '@'
             },
             link: function (scope, elem, attr) {
                 // defaults
@@ -81,7 +82,8 @@
                     showZoomer: zoomSlider,
                     enableExif: scope.exif,
                     enforceBoundary: scope.enforceBoundary,
-                    enableOrientation: scope.orientation
+                    enableOrientation: scope.orientation,
+                    enableResize: scope.enableResize
                 };
 
                 if (typeof scope.update !== 'undefined') {
